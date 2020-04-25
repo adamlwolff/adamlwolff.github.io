@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/meme.css">
+    <title>Meme Generator</title>
+</head>
+<body>
+    <header><h1>Let's Make Some Memes</h1>Fill out the form to start creating memes
+        <form id="formElement" action="">
+            <div class="textArea">
+                <div class="col-25">
+                    <label for="downloadImage" >Image URL</label>
+                </div>
+                <div class="col-75"> 
+                    <input type="url" id="downloadImage" name="imageURL" placeholder="Place URL for your image here"> 
+                </div>
+                <div class="col-25">
+                    <label for="topText" >Text on Top</label>
+                </div>
+                <div class="col-75"> 
+                    <input type="text" id="topText" name="tText" placeholder="(Optional) What text would you like at top of meme?"> 
+                </div>
+                <div class="col-25">
+                    <label for="bottomText" >Text on Bottom</label>
+                </div>
+                <div class="col-75"> 
+                    <input type="text" id="bottomText" name="bText" placeholder="(Optional) What text would you like at bottom of meme?"> 
+                </div>
+            </div>
+            <button type="submit" id="submit">Add Meme</button>
+        </form>
+</header>
+<main id="main">
+</main>
+</body>
+<script src="assets/js/memegen.js" > </script>
+</html>

@@ -1,0 +1,123 @@
+body {
+  margin: 0;
+}
+header {
+    padding: 40px;
+    text-align: center;
+    background-image: linear-gradient(to bottom, DimGray, LightGray);
+  color: white;
+  font-size: 30px;
+  font-family: 'Oxygen', sans-serif;
+  box-sizing: border-box;
+  max-height: 700px;
+  overflow: auto;
+}
+label {
+  padding: 12px, 12px, 12px, 0;
+ display: inline-block;
+ color: black;
+ font-size: 0.5em;
+}
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+.col-75 {
+  float: left;
+  width: 66%;
+  margin-top: 6px;
+  
+}
+input[type=text], input[type=url] {
+  width: 100%;
+  padding: 5px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+input:focus {
+    background-color: none;
+}
+
+button {
+    background-color: teal;
+    color: whitesmoke;
+    padding: 15px, 25px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    height: 30px;
+    font-size: large;
+    margin-top: 25px;
+
+}
+
+.textArea:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+}
+
+.container {
+    float: left;
+    position: relative;
+    margin-top: 15px;
+    margin-left: 15px;
+    text-align: center;
+    color: white;
+    max-width: 32%;
+}
+
+.upDiv {
+    position: absolute;
+    width: 80%;
+    top: 8px;
+    left: 50%;
+    transform: translate(-50%,0%);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 2em;
+}
+
+.downDiv {
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    transform: translate(-50%,0%);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 2em;
+    bottom: 10px;
+}
+
+.deleteMeme {
+position: absolute;
+z-index: 1;
+background-color: gold;
+margin-top: 0px;
+top: 0px;
+right: 0px;
+width: 100%;
+height: 100%;
+
+  border: none;
+  color: white;
+  padding: 3px;
+  text-align: center;
+  font-size: 10em;
+
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.deleteMeme:hover {
+    opacity: .6;
+    background-color: lightgray;
+    color: black;
+
+}
